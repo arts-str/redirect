@@ -10,20 +10,26 @@
     
     <div class="button-list">
 
-        <button id="canvaButton">CANVA</button>
+        <button id="canvaButtonPosts">CANVA POSTEOS</button>
+        <button id="canvaButtonStories">CANVA STORIES</button>
         <button id="postButton">LINK A VIDEO DE YOUTUBE</button>
 
     </div>
 
     <script>
-        const canvaButton = document.getElementById('canvaButton');
+        const canvaButtonPosts = document.getElementById('canvaButtonPosts');
+        const canvaButtonStories = document.getElementById('canvaButtonStories');
         const postButton = document.getElementById('postButton');
 
-        const canvaURL = 'https://www.canva.com/folder/FAF4rjitPXs';
+        const canvaStoriesURL = 'https://www.canva.com/design/DAG4tlWVegk/HwzPrfdxn4J9vNuMQ1Un9Q/edit';
+        const canvaPostURL = 'https://www.canva.com/design/DAG4tq4tWMQ/rlKJC24we_I0qe_I2FjQDA/edit';
         const postURL = 'https://www.youtube.com/watch?v=7fV_hBhuFvo';
 
-        canvaButton.onclick = () =>{
-            window.location = canvaURL;
+        canvaButtonPosts.onclick = () =>{
+            window.location = canvaPostURL;
+        }
+        canvaButtonStories.onclick = () =>{
+            window.location = canvaStoriesURL;
         }
         postButton.onclick = () =>{
             window.location = postURL;
