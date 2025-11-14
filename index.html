@@ -4,12 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redireccionando...</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
+    <div class="button-list">
+
+        <button id="canvaButton">CANVA</button>
+        <button id="postButton">LINK A POSTEOS</button>
+
+    </div>
+
     <script>
-        const URL_REDIR = "https://www.canva.com/folder/FAF4rjitPXs";
-        window.location.replace(URL_REDIR);
+        const canvaButton = document.getElementById('canvaButton');
+        const postButton = document.getElementById('postButton');
+
+        const canvaURL = 'https://www.canva.com/folder/FAF4rjitPXs';
+        const postURL = 'https://www.youtube.com/watch?v=7fV_hBhuFvo';
+
+        canvaButton.onclick = () =>{
+            window.location = canvaURL;
+        }
+        postButton.onclick = () =>{
+            window.location = postURL;
+        }
     </script>
 </body>
 </html>

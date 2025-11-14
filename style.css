@@ -1,0 +1,38 @@
+:root{
+    --body-bg: #0d0d0d;
+    --bg: #1d1d1d;
+    --bg-hover: #2f2f2f;
+    --fg: #E8DCC5;
+}
+
+body{
+    background-color: var(--body-bg);
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-list{
+    background-color: var(--bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20rem;
+    width: 20rem;
+}
+
+button{
+    color: var(--fg);
+    background-color: var(--bg);
+    outline: none;
+    border: var(--bg-hover) 2px solid;
+    margin: 1rem;
+    padding: 1rem;
+    width: 40%;
+}
+button:hover{
+    cursor: pointer;
+    background-color: var(--bg-hover);
+}
